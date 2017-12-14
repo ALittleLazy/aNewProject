@@ -4,16 +4,16 @@ import java.awt.*;
 
 public class main_jframe extends JFrame {
     public main_jframe() {
-        setSize(800,600);
-        setVisible(true);
+//        setSize(800,600);
+
         setTitle("Hello World");
-        //etBackground(Color.red);
-        //this.getContentPane().setBackground(Color.red);
+        this.setBackground(Color.red);
 
-        JPanel jp =  new JPanel();
-        jp.setBackground(Color.blue);
-
-        this.add(jp);
+//      set the frame to maximization
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
+//      Set the frame position to be in the middle
+//        this.setLocationRelativeTo(null);
+        setVisible(true);
     }
     public static void main(String[] args) {
         main_jframe ct1 = new main_jframe();
